@@ -5,7 +5,7 @@ import { parseISO, format } from 'date-fns';
 export default function PostList({ posts }){
     return (
       <div className="postlist">
-      {posts.reverse().map(post => (
+      {posts.map(post => (
         <div className="row postlist-item" key={post.slug}>
           <div className="col-sm postlist-first-column">
             <time className="postlist-date">
