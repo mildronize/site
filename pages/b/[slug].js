@@ -5,8 +5,6 @@ import fetch from 'isomorphic-unfetch'
 import Config from '../../config';
 import PageLayout from '../../components/layouts/PageLayout';
 import { parseISO, format } from 'date-fns';
-import Prism from 'prismjs';
-import "prismjs/components/prism-python";
 import he from 'he';
 
 import Disqus from 'disqus-react';
@@ -15,15 +13,10 @@ export default class PostPage extends Component {
   static async getInitialProps({ query }) {
     // fetch single post detail
     const response = await fetch(
-      `${Config.WPAPI.allPostsById}&slug=${query.slug}`
+      `${Config.apiUrl}/posts/${query.slug}.json`
     )
     const post = await response.json();
-    const data = post[0];
-    return { post: data }
-  }
-
-  componentDidMount() {
-    Prism.highlightAll();
+    return { post }
   }
 
   render() {
@@ -33,7 +26,7 @@ export default class PostPage extends Component {
     const disqusConfig = {
       url: `https://mildronize.com/b/${slug}`,
       identifier: slug,
-      title: he.decode(title.rendered),
+      title: he.decode(title),
     };
 
     return (
@@ -41,11 +34,11 @@ export default class PostPage extends Component {
         <main>
 
           <Head>
-            <title>{title.rendered}</title>
+            <title>{title}</title>
           </Head>
           <article>
             <h1
-              dangerouslySetInnerHTML={{ __html: title.rendered }}
+              dangerouslySetInnerHTML={{ __html: title }}
             />
             <p className="post-tagline">
               <span className="post-tagline-date">
@@ -61,7 +54,7 @@ export default class PostPage extends Component {
               </span>
             </p>
             <div
-              dangerouslySetInnerHTML={{ __html: content.rendered }}
+              dangerouslySetInnerHTML={{ __html: content }}
             />
           </article>
           <section aria-label="comment">

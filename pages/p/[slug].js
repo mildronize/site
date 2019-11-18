@@ -9,17 +9,17 @@ export default class Page extends Component {
   static async getInitialProps ({ query }) {
     // fetch single post detail
     const response = await fetch(
-      `http://127.0.0.1:4000/posts/introduction/`
+      `${Config.apiUrl}/pages/${query.slug}.json`
     )
     const page  = await response.json();
     // const data = page[0];
     // console.log(`${Config.WPAPI.allPagesById}&slug=${query.slug}`);
-    console.log(page );
+    // console.log(page);
     return { page: page }
   }
 
   render () {
-    // const { title, content } = this.props.page;
+    const { title, content } = this.props.page;
 
     return (
       <PageLayout>
@@ -28,7 +28,7 @@ export default class Page extends Component {
           <title>{title.rendered}</title>
         </Head> */}
         <div
-          dangerouslySetInnerHTML={{ __html:  this.props.page }}
+          dangerouslySetInnerHTML={{ __html:  content }}
         />
        
       </main>

@@ -14,7 +14,7 @@ export default function PostList({ posts }){
           </div>
           <div className="col-sm"> 
             <Link  href='/b/[slug]' as={`/b/${post.slug}`}>
-              <a className="postlist-link"><span  dangerouslySetInnerHTML={{ __html:  post.title.rendered }} /></a>
+              <a className="postlist-link"><span  dangerouslySetInnerHTML={{ __html:  post.title }} /></a>
               </Link>
           </div>
         </div>
