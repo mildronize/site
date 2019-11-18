@@ -37,7 +37,8 @@ module.exports = withOffline(withBundleAnalyzer(withSass({
       '/': { page: '/' },
       '/admin': { page: '/admin' },
       '/_preview': { page: '/_preview' },
-      '/search': { page: '/search' }
+      '/search': { page: '/search' },
+      '/status': { page: '/status' }
     })
   }
 })));
