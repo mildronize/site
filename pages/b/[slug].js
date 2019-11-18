@@ -48,11 +48,9 @@ export default class PostPage extends Component {
                 |
               </span>
               <span className="post-tagline-comment">
-                <LazyLoad once >
                   <Disqus.CommentCount shortname={disqusShortname} config={disqusConfig}>
                     Comments
                 </Disqus.CommentCount>
-                </LazyLoad>
 
               </span>
             </p>
@@ -63,7 +61,7 @@ export default class PostPage extends Component {
           <section aria-label="comment">
             <div className="post-offset-bottom" />
             <h1>Comment</h1>
-              <LazyLoad width={200} once >
+              <LazyLoad width={200} >
                 <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
               </LazyLoad>
            
