@@ -6,7 +6,7 @@ import Config from '../../config';
 import PageLayout from '../../components/layouts/PageLayout';
 import { parseISO, format } from 'date-fns';
 import he from 'he';
-
+import LazyLoad from 'react-lazyload';
 import Disqus from 'disqus-react';
 
 export default class PostPage extends Component {
@@ -48,9 +48,12 @@ export default class PostPage extends Component {
                 |
               </span>
               <span className="post-tagline-comment">
-                <Disqus.CommentCount shortname={disqusShortname} config={disqusConfig}>
-                  Comments
+                <LazyLoad once >
+                  <Disqus.CommentCount shortname={disqusShortname} config={disqusConfig}>
+                    Comments
                 </Disqus.CommentCount>
+                </LazyLoad>
+
               </span>
             </p>
             <div
@@ -60,7 +63,10 @@ export default class PostPage extends Component {
           <section aria-label="comment">
             <div className="post-offset-bottom" />
             <h1>Comment</h1>
-            <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+              <LazyLoad width={200} once >
+                <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+              </LazyLoad>
+           
           </section>
 
           <section>
