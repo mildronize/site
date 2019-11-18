@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "next-mildronize",
+    "alias": "next-mildronize",
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@now/next"
+          }
+    ]
+    
+}

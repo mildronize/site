@@ -1,0 +1,41 @@
+{
+  "name": "next-wp-headless-starter",
+  "dependencies": {
+    "@next/bundle-analyzer": "^9.1.2",
+    "@zeit/next-sass": "^1.0.1",
+    "bootstrap": "^4.3.1",
+    "date-fns": "^2.7.0",
+    "disqus-react": "^1.0.7",
+    "he": "^1.2.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "lazysizes": "^5.2.0-beta1",
+    "next": "^9.0.5",
+    "next-offline": "^4.0.6",
+    "node-sass": "^4.13.0",
+    "nprogress": "^0.2.0",
+    "prismjs": "^1.17.1",
+    "query-string": "^6.8.3",
+    "react": "^16.7.0",
+    "react-content-loader": "^4.3.2",
+    "react-dom": "^16.7.0",
+    "reactstrap": "^8.1.1"
+  },
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
+    "preexport": "npm run build",
+    "export": "next export",
+    "prestart": "npm run export",
+    "start": "serve -s out",
+    "deploy": "npm run deploy:only && npm run now:clean",
+    "deploy:only": "now --target production",
+    "now:clean": "now rm --safe --yes next-mildronize"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "serve": "^11.2.0"
+  }
+}
