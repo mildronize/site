@@ -80,7 +80,7 @@ export default class extends Component {
                   <Link href="/">
                     <a> <img className="logo" src="/icons/apple-touch-icon.png" /></a> 
                   </Link>
-                  <a className="tag-alpha" href="https://github.com/mildronize/site">V 4.0.0</a>
+                  <a className="tag-alpha" href="/p/about#changelog">V 4.0.0</a>
                 {/* </NavbarBrand> */}
 
                 {/* <NavbarToggler onClick={() => this.toggle()} /> */}
