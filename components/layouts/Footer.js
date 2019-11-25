@@ -26,7 +26,7 @@ const Footer = () => (
           </a>
           <a
             className="footer-user-link"
-            href="https://www.linkedin.com/in/thada-wangthammang-281894a6"
+            href="https://www.linkedin.com/in/thada-wangthammang-281894a6/"
             aria-label="My Linkedin"
           >
             <i className="fab fa-linkedin"></i>
