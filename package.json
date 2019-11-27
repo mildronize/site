@@ -33,9 +33,11 @@
     "start": "serve -s out",
     "deploy": "npm run deploy:only && npm run now:clean",
     "deploy:only": "now --target production",
-    "now:clean": "now rm --safe --yes next-mildronize"
+    "now:clean": "now rm --safe --yes next-mildronize",
+    "test": "blc https://mildronize.com/ -ro"
   },
   "devDependencies": {
+    "broken-link-checker": "^0.7.8",
     "cross-env": "^6.0.3",
     "serve": "^11.2.0"
   }
