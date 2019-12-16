@@ -19,6 +19,7 @@
     "react-content-loader": "^4.3.2",
     "react-dom": "^16.7.0",
     "react-ga": "^2.7.0",
+    "react-hotjar": "^2.0.4",
     "react-lazyload": "^2.6.5",
     "reactstrap": "^8.1.1"
   },
