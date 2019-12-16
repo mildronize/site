@@ -2,12 +2,21 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { initGA, logPageView } from '../../utils/analytics'
 
 // https://web.dev/codelab-use-lazysizes-to-lazyload-images/
 import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 class PageLayout extends Component {
+
+    componentDidMount(){
+        if (!window.GA_INITIALIZED) {
+            initGA()
+            window.GA_INITIALIZED = true
+          }
+          logPageView()
+    }
     render() {
         const { children } = this.props;
         return (
