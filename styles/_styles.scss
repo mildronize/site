@@ -1,4 +1,3 @@
-
 // @import "font-prompt.scss";
 
 // $font-color: #363636;
@@ -21,8 +20,12 @@
   hyphens: auto;
 }
 
-
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: $headings-margin-top;
   margin-bottom: $headings-margin-bottom;
 }
@@ -31,7 +34,7 @@ li {
   margin-bottom: 0.35rem;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
@@ -39,7 +42,7 @@ img{
 a {
   @include word-wrap;
 }
-:not(pre)>code {
+:not(pre) > code {
   @include word-wrap;
 }
 
@@ -60,41 +63,41 @@ samp {
 //     border-radius: 50%;
 //     width:160px;
 //   }
-  // &-summary{
-  //   padding-top: 1.5rem;
-  // }
-  // &-card {
-  //   padding: 0.25rem;
-  // }
-
-  // &-profile-col{
-  //   flex: 0 0 200px;
-  // }
-  // &-title {
-  //   font-weight: 600;
-  //   text-transform: uppercase;
-  //   color: #999;
-  //   font-size: 0.7rem;
-  // }
+// &-summary{
+//   padding-top: 1.5rem;
+// }
+// &-card {
+//   padding: 0.25rem;
 // }
 
-.about{
-  &-user-link{
+// &-profile-col{
+//   flex: 0 0 200px;
+// }
+// &-title {
+//   font-weight: 600;
+//   text-transform: uppercase;
+//   color: #999;
+//   font-size: 0.7rem;
+// }
+// }
+
+.about {
+  &-user-link {
     text-decoration: none;
     color: grey;
     padding-right: 1.5rem;
     font-size: 1.25rem;
   }
 
-  &-user-link:hover{
+  &-user-link:hover {
     text-decoration: none;
   }
 
-  &-user-link a{
+  &-user-link a {
     text-decoration: none;
   }
 
-  &-user-link-title{
+  &-user-link-title {
     padding: 0.5rem;
   }
 
@@ -102,70 +105,71 @@ samp {
     padding: 0;
   }
 
-  &-contact li{
+  &-contact li {
     list-style-type: none;
     display: inline-block;
   }
 }
 
-
-blockquote p{
+blockquote p {
   background-color: #f5eac4;
   padding: 1rem 1.2rem;
   margin: 0.5rem 0;
-  border-radius: .3em;
+  border-radius: 0.3em;
 }
 
 // Code block from `prism-dracula.css`
 
 code,
-pre{
-    color: #f8f8f2;
-    background: none;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 1.5;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none; }
+pre {
+  color: #f8f8f2;
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
 
 /* Code blocks */
 pre {
-    padding: 1em;
-    margin: .5em 0;
-    overflow: auto;
-    border-radius: 0.3em; }
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
 
 :not(pre) > code,
-pre{
-    background: #282a36; }
+pre {
+  background: #282a36;
+}
 
 /* Inline code */
-:not(pre) > code{
-    padding: .1em;
-    border-radius: .3em;
-    white-space: normal; 
-    color: #282a36;
-    background: #eee;
-  }
-
+:not(pre) > code {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+  color: #282a36;
+  background: #eee;
+}
 
 // Post Layout
-.post{
-  &-title{
-    margin-bottom: 0rem; 
+.post {
+  &-title {
+    margin-bottom: 0rem;
   }
-  &-date{
-    margin-bottom: 2.5rem; 
+  &-date {
+    margin-bottom: 2.5rem;
   }
   &-container {
     width: 100%;
@@ -177,9 +181,9 @@ pre{
   }
 }
 
-.page{
-  &-title{
-    margin-bottom: 2.5rem; 
+.page {
+  &-title {
+    margin-bottom: 2.5rem;
   }
   &-container {
     width: 100%;
@@ -192,26 +196,25 @@ pre{
 }
 
 // container with Bootstrap navbar
-.navbar>.page-container{
+.navbar > .page-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar-light .navbar-toggler{
+.navbar-light .navbar-toggler {
   border-color: rgba(0, 0, 0, 0);
 }
 
 // `...` horizental line
 
-hr{
+hr {
   display: block;
   text-align: center;
   border-width: 0px;
   margin-bottom: 3rem;
   padding: 2rem;
-  
 }
 hr::before {
   content: "...";
@@ -221,15 +224,15 @@ hr::before {
 }
 
 // Required bootstrap >= 4.0
-.two-columns{
+.two-columns {
   // margin-left: 0; margin-right: 0;
   list-style-type: none;
   padding-left: 0;
   margin: 2rem 0;
   @media (min-width: 980px) {
-    margin-left: -12rem; margin-right: -12rem;
+    margin-left: -12rem;
+    margin-right: -12rem;
   }
-  
 }
 
 // Placeholder like medium
@@ -264,14 +267,13 @@ hr::before {
   }
 }
 
-.page-title{
+.page-title {
   margin-bottom: 3.5rem;
 }
 
-.preview-header{
+.preview-header {
   color: #999;
 }
-
 
 .post-offset-bottom {
   margin-bottom: 7rem;
@@ -280,5 +282,177 @@ hr::before {
 .post-tagline {
   &-delimiter {
     padding: 0 1rem;
+  }
+}
+
+//  First page
+
+@import "_font-voga.css";
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+
+.first-page {
+  &--head {
+    font-family: "Voga Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 9rem;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: -5rem;
+    line-height: 1;
+  }
+
+  &--quote{
+    // margin-top: 4rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background: none;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+
+  @media (min-width: 626px) and (max-width: 700px)  {
+    &--head {
+      font-size: 8rem;
+      letter-spacing: 10px;
+      margin-top: -4.5rem;
+    }
+    &--quote{
+      font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 549px) and (max-width: 623px)  {
+  &--head {
+    font-size: 7rem;
+    margin-top: -4rem;
+    letter-spacing: 10px;
+  }
+  &--quote{
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 489px) and (max-width: 550px)  {
+  &--head {
+    font-size: 6rem;
+    margin-top: -3.5rem;
+    letter-spacing: 10px;
+  }
+  &--quote{
+    font-size: 0.9rem;
+  }
+}
+
+  @media (min-width: 453px) and (max-width: 490px)  {
+    &--head {
+      font-size: 5rem;
+      margin-top: -3rem;
+      letter-spacing: 10px;
+    }
+    &--quote{
+      font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 383px) and (max-width: 452px)  {
+  &--head {
+    font-size: 4rem;
+    margin-top: -2.5rem;
+    letter-spacing: 10px;
+  }
+  &--quote{
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 382px)  {
+  &--head {
+    font-size: 3rem;
+    margin-top: -2rem;
+    letter-spacing: 10px;
+  }
+  &--quote{
+    font-size: 0.6rem;
+  }
+}
+
+  &--header{
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--header a{
+    color: black;
+  }
+
+  &--cover-bg{
+    border: 1px solid #fff;
+    height: 900px;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    background-image: url("/cover.jpg");
+    background-size: cover;;
+    background-position: center;
+
+    
+  }
+
+
+  &--bottom-content{
+    margin-top: -10rem;
+    font-size: 1rem;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    // display: flex;
+    // flex-flow: row wrap;
+    // justify-content: space-around;
+    color: white;
+  }
+
+  &--bottom-content.row{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+  }
+
+  &--bottom-content-item{
+    // flex-basis: 25%;
+    line-height: 1.2;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  &--bottom-content-item a{
+    color: white;
+  }
+
+  &--bottom-content-title{
+    font-weight: 900;
+  }
+
+  &--vertical-align{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
   }
 }
