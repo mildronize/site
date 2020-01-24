@@ -12,6 +12,8 @@ class Home extends Component {
 
   render() {
     return (
+      <>
+      <Header />
       <main>
         <div className="page-container">
           <div class="first-page--header">
@@ -71,6 +73,7 @@ class Home extends Component {
           </div>
         </div>
       </main>
+      </>
     );
   }
 }
