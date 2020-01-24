@@ -3,7 +3,7 @@ import fetch from "isomorphic-unfetch";
 import Config from "../config";
 import Link from "next/link";
 import PostList from "../components/PostList";
-import PageLayout from "../components/layouts/PageLayout";
+import Header from "../components/layouts/Header";
 
 class Home extends Component {
   static async getInitialProps() {
