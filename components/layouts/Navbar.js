@@ -88,9 +88,6 @@ export default class extends Component {
                   <Link href='/p/[slug]' as={`/p/about`} >
                     <a className="nav-link">about</a>
                   </Link>
-                  <Link href='/blog'>
-                    <a className="nav-link">blog</a>
-                  </Link>
                   {/* <a className="nav-link"><i className="fas fa-search"></i></a> */}
                 </span>
 
