@@ -39,7 +39,6 @@ module.exports = withOffline(withBundleAnalyzer(withSass({
       '/_preview': { page: '/_preview' },
       '/search': { page: '/search' },
       '/status': { page: '/status' },
-      '/blog': { page: '/blog' }
     })
   }
 })));
