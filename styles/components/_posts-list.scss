@@ -1,26 +1,33 @@
-.postlist{
-    &-item{
-        margin: 2rem 0;
-    }   
+.postlist {
+  .postlist-item-link:hover {
+    text-decoration: none;
+  }
+  &-item {
+    padding: 1.5rem 0;
+  }
+  &-item:hover {
+    background-color: #f7f7f7;
+  }
 
-    &-link{
-        color: black;
-        font-family: $headings-font-family;
-        font-weight: 500;
-        font-size: 1.3rem;
-    }
-    &-first-column{
-        flex: 0 0 130px;
-        font-size: 0.9rem;
-        padding-top: 0.3rem;
-    }
+  &-link {
+    color: black;
+    font-family: $headings-font-family;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  &-first-column {
+    flex: 0 0 130px;
+    font-size: 0.9rem;
+    padding-top: 0.3rem;
+  }
 
-    .tag{
-        color: #999;
-        font-weight: normal;
-        padding: 0.2rem;
-        margin-right: 0.4rem;
-        font-size: 0.7rem;
-        // background-color: white;
-    }
+  .tag {
+    color: #999;
+    font-weight: normal;
+    padding: 0.2rem;
+    margin-right: 0.4rem;
+    font-size: 0.7rem;
+    // background-color: white;
+  }
 }
