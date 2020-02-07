@@ -37,7 +37,7 @@ class Blog extends Component {
         </div>
         <main>
           <div className="page-container">
-            <hr />
+            {/* <hr /> */}
 
             <div className="page-section-header">Latest Posts</div>
             <PostList posts={this.props.postList} />

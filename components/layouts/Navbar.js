@@ -1,31 +1,29 @@
 import React, { Component } from "react";
-import Link from 'next/link';
+import Link from "next/link";
 import {
   Collapse,
   Navbar,
   // NavbarToggler,
-  NavbarBrand,
+  NavbarBrand
   // Nav,
   // NavItem,
   // NavLink
 } from "reactstrap";
 
 export default class extends Component {
-
-
   state = {
     isOpen: false,
     isScrollDownClass: "",
     isOpenNav: true,
-    previousScrollY: 0,
-  }
+    previousScrollY: 0
+  };
 
   resetState() {
     this.setState({
       isOpen: false,
       isScrollDownClass: "",
       isScrollDown: false,
-      previousScrollY: 0,
+      previousScrollY: 0
     });
   }
 
@@ -35,11 +33,11 @@ export default class extends Component {
 
   componentDidMount() {
     this.resetState();
-    window.addEventListener('scroll', this.handleScroll.bind(this));
+    window.addEventListener("scroll", this.handleScroll.bind(this));
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll.bind(this));
+    window.removeEventListener("scroll", this.handleScroll.bind(this));
   }
 
   handleScroll(event) {
@@ -58,7 +56,10 @@ export default class extends Component {
 
     // Check scroll direction: up or down
 
-    if (this.state.previousScrollY > window.scrollY || window.scrollY < targetScrollY) {
+    if (
+      this.state.previousScrollY > window.scrollY ||
+      window.scrollY < targetScrollY
+    ) {
       this.setState({ isOpenNav: true });
     } else {
       this.setState({ isOpenNav: false });
@@ -66,26 +67,36 @@ export default class extends Component {
     }
 
     this.setState({ previousScrollY: window.scrollY });
-
   }
 
   render() {
     return (
       <>
         <div className="fixed-top">
-          <Collapse isOpen={this.state.isOpenNav} >
-            <Navbar color="light" light expand="sm" className={`bg-white ${this.state.isScrollDownClass}`} >
+          <Collapse isOpen={this.state.isOpenNav}>
+            <Navbar
+              color="light"
+              light
+              expand="sm"
+              className={`bg-white ${this.state.isScrollDownClass}`}
+            >
               <div className="page-container">
                 {/* <NavbarBrand> */}
+                <span className="logo-link">
                   <Link href="/">
-                    <a> <img className="logo" src="/icons/apple-touch-icon.png" /></a> 
+                    <a>
+                      <img className="logo" src="/icons/apple-touch-icon.png" />
+                    </a>
                   </Link>
-                  <a className="tag-alpha" href="/p/about#changelog">V 4.0.0</a>
+                </span>
+                <a className="tag-alpha" href="/p/about#changelog">
+                  V 4.0.0
+                </a>
                 {/* </NavbarBrand> */}
 
                 {/* <NavbarToggler onClick={() => this.toggle()} /> */}
                 <span className="my-nav ml-auto">
-                  <Link href='/p/[slug]' as={`/p/about`} >
+                  <Link href="/p/[slug]" as={`/p/about`}>
                     <a className="nav-link">about</a>
                   </Link>
                   {/* <a className="nav-link"><i className="fas fa-search"></i></a> */}
@@ -117,16 +128,12 @@ export default class extends Component {
                     </NavItem>
                   </Nav>
                 </Collapse> */}
-
-
               </div>
             </Navbar>
           </Collapse>
-
         </div>
         <div className="header-offset-bottom"></div>
       </>
     );
   }
-
 }

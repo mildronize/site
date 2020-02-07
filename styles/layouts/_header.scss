@@ -16,9 +16,11 @@
   padding-top: 0.1rem;
   padding-bottom: 0.3rem;
   padding-right: 0.5rem;
-  // margin-left: -0.5rem;
 }
 
+.logo-link{
+  margin-left: -0.5rem;
+}
 
 
 /*!
@@ -43,7 +45,7 @@
 
   .nav-item {
     margin-bottom: 0;
-    margin-right: 0.5rem;
+    // margin-right: 0.5rem;
     padding: 0 0.2rem;
 
     &-active{
@@ -54,11 +56,14 @@
 }
 
 .my-nav {
+  margin-right: -1.6rem;
+
   .nav-link {
     font-size: 1.05rem;
-    padding: 0 1rem;
+    padding-left: 1rem;
     display: inline-block;
   }
+  
 }
 
 .navbar-light .navbar-nav .nav-link {
