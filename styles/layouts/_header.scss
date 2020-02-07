@@ -43,6 +43,14 @@
     font-size: 1.05rem;
   }
 
+  .nav-link:hover {
+    background-color: #f7f7f7;
+    border-radius: 5px 5px;
+  }
+  .nav-link:active {
+    background-color: #dddddd;
+  }
+
   .nav-item {
     margin-bottom: 0;
     // margin-right: 0.5rem;

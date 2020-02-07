@@ -9,6 +9,10 @@
     background-color: #f7f7f7;
   }
 
+  &-item:active {
+    background-color: #dddddd;
+  }
+
   &-link {
     color: black;
     font-family: $headings-font-family;
@@ -28,6 +32,5 @@
     padding: 0.2rem;
     margin-right: 0.4rem;
     font-size: 0.7rem;
-    // background-color: white;
   }
 }
