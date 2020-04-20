@@ -1,4 +1,4 @@
-const apiUrl = 'https://mildronize-data.netlify.com';
+const apiUrl = 'https://mildronize-data.netlify.app';
 
 const WPAPI = {    
     // allPosts: 'https://host.mildronize.com/wp-json/wp/v2/posts',     

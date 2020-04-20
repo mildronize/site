@@ -5,7 +5,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
-const apiUrl = 'https://mildronize-data.netlify.com';
+const apiUrl = 'https://mildronize-data.netlify.app';
 const per_page = 100;
 
 async function getPages(prefix, WPUrl){
