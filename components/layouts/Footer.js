@@ -4,7 +4,7 @@ const Footer = () => (
   <div>
     <footer className="footer">
       <center>
-        <div className="footer-copyright">© 2015 - 2019 mildronize.com </div>
+        <div className="footer-copyright">© 2015 - 2020 mildronize.com </div>
         <div className="footer-info">
          <a href="https://github.com/mildronize/site">V 4.0.0</a> Built with ❤ by Thada Wangthammang
          </div>

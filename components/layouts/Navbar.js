@@ -89,9 +89,9 @@ export default class extends Component {
                     </a>
                   </Link>
                 </span>
-                <a className="tag-alpha" href="/p/about#changelog">
-                  V 4.0.0
-                </a>
+                {/* <a className="tag-alpha">
+                  MILD'S BLOG
+                </a> */}
                 {/* </NavbarBrand> */}
 
                 {/* <NavbarToggler onClick={() => this.toggle()} /> */}
