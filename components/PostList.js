@@ -15,9 +15,11 @@ export default function PostList({ posts }) {
                 </time>
               </div>
               <div className="col-sm">
-                <div className="postlist-link">
+                <h4 className="post-list-title">
+                <div >
                   <span dangerouslySetInnerHTML={{ __html: post.title }} />
                 </div>
+                </h4>
               </div>
             </div>
           </a>
