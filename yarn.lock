@@ -6564,10 +6564,10 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-content-loader@^5.0.4:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/react-content-loader/-/react-content-loader-5.1.0.tgz#7da2b75aefcdb2571df88ddc61a6f76a413ff616"
-  integrity sha512-80t5SYxLCXDvpaRRH/p4tV8RGGPBM7YAWwA+mARCJWRj4IkcEnJxkPGboBENgkBmyG4xsMAsa/dgy93DXoQ1dA==
+react-content-loader@^5.1.4:
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/react-content-loader/-/react-content-loader-5.1.4.tgz#854bafe4415dd9de07174621375bc308edd0ebb5"
+  integrity sha512-hTq7pZi2GKCK6a9d3u6XStozm0QGCEjw8cSqQReiWnh2up6IwCha5R5TF0o6SY5qUDpByloEZEZtnFxpJyENFw==
 
 react-dom@^17.0.1:
   version "17.0.1"
@@ -6578,12 +6578,12 @@ react-dom@^17.0.1:
     object-assign "^4.1.1"
     scheduler "^0.20.1"
 
-react-ga@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.7.0.tgz#24328f157f31e8cffbf4de74a3396536679d8d7c"
-  integrity sha512-AjC7UOZMvygrWTc2hKxTDvlMXEtbmA0IgJjmkhgmQQ3RkXrWR11xEagLGFGaNyaPnmg24oaIiaNPnEoftUhfXA==
+react-ga@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-3.2.1.tgz#ad2a6f848cc9555d63c188d37d6e11798393e4ed"
+  integrity sha512-uRwNVd7seL2I2lZBE7et8Ul0r/xNDIQkZ43QmnMrcZwY8dNB5UgPjPJA6E18xFtArLgDK/dy/O0TzYqWCsMHDg==
 
-react-hotjar@^2.2.0:
+react-hotjar@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/react-hotjar/-/react-hotjar-2.2.1.tgz#5f06d15a146960262dba612657c828c8b58da8a3"
   integrity sha512-rkHdsFDfI7HCKeAwkHPf8Vq7ZbpX0oE4/5GgVvNambWw8z0PSKKxi59qWYX7H+dDYjchiL3z3hrAFQ+PohgQOA==
@@ -6593,10 +6593,10 @@ react-is@16.13.1, react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-lazyload@^2.6.7:
-  version "2.6.9"
-  resolved "https://registry.yarnpkg.com/react-lazyload/-/react-lazyload-2.6.9.tgz#5a88c885bb98a3b6580759d51039867d1c97d198"
-  integrity sha512-vB7WLp+ZlTEy6LEFFiMtCys7ShX4P64t/eUOAXt58qret6HCbwMY5f/cD0EPCXx1z/UZC3wb9kxPf2DVIQkc4Q==
+react-lazyload@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/react-lazyload/-/react-lazyload-3.1.0.tgz#2d2b172ede29f0a72dc4b329af6f1626ffd637d2"
+  integrity sha512-WNkWS2jlLnAud2uEqi/Ud4TEjzOQzsN97NzbeRodB9k0TepnoadXDU2bee3PvfP3vpbepsZ716FjSb+xS1W4UQ==
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
