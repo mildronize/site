@@ -1,5 +1,5 @@
 const fetch = require('isomorphic-unfetch');
-const withSass = require('@zeit/next-sass');
+const path = require('path');
 const withOffline = require('next-offline')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
@@ -23,10 +23,9 @@ async function getPages(prefix, WPUrl){
   return pages;
 }
 
-module.exports = withOffline(withBundleAnalyzer(withSass({
-  sassLoaderOptions: {
-    includePaths: ["./node_modules", "./styles"],
-    outputStyle: 'compressed'
+module.exports = withOffline(withBundleAnalyzer({
+  sassOptions: {
+    includePaths: [path.join(__dirname, "./node_modules"), path.join(__dirname, 'styles')],
   },
   async exportPathMap () {
     let pages = await getPages('b',`${apiUrl}/posts.json`);
@@ -41,4 +40,4 @@ module.exports = withOffline(withBundleAnalyzer(withSass({
       '/status': { page: '/status' },
     })
   }
-})));
+}));

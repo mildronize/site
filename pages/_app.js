@@ -2,6 +2,7 @@ import React from 'react'
 import App from 'next/app'
 // import NProgress from 'nprogress'
 import Router from 'next/router'
+import '../styles/index.scss';
 
 // NProgress.configure({ showSpinner: false });
 // Router.events.on('routeChangeStart', url => {
