@@ -5,7 +5,7 @@ import Link from "next/link";
 import PostList from "../components/PostList";
 import PageLayout from "../components/layouts/PageLayout";
 import Header from "../components/layouts/Header";
-import Navbar from "../components/layouts/Navbar";
+import Navbar from "../components/layouts/MyNavbar";
 import Footer from "../components/layouts/Footer";
 
 class Blog extends Component {

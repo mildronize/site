@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Header from "./Header";
-import Navbar from "./Navbar";
+import Navbar from "./MyNavbar";
 import Footer from "./Footer";
 import { initGA, logPageView } from "../../utils/analytics";
 import { hotjar } from 'react-hotjar';
