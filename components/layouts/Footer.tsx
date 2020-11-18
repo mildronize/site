@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => (
   <div>
     <footer className="footer">
-      <center>
+      <div>
         <div className="footer-copyright">© 2015 - 2020 mildronize.com </div>
         <div className="footer-info">
          <a href="https://github.com/mildronize/site">V 4.0.0</a> Built with ❤ by Thada Wangthammang
@@ -46,7 +46,7 @@ const Footer = () => (
             <i className="fab fa-medium"></i>
           </a>
         </div>
-      </center>
+      </div>
     </footer>
 
 

@@ -5,7 +5,7 @@ import { lightTheme, darkTheme } from "../../themes/Themes";
 import { actions, selector } from "../../store";
 import { useSelector, useDispatch } from "react-redux";
 
-import { useThemeSwitcher } from "../theme";
+import { useThemeSwitcher } from ".";
 
 import { GlobalStyles } from "../../themes/GlobalStyles";
 import { Normalize } from 'styled-normalize';

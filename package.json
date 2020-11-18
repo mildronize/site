@@ -44,8 +44,10 @@
     "test": "blc https://mildronize.com/ -ro"
   },
   "devDependencies": {
+    "@types/react": "^16.9.56",
     "broken-link-checker": "^0.7.8",
     "cross-env": "^7.0.2",
-    "serve": "^11.3.2"
+    "serve": "^11.3.2",
+    "typescript": "^4.0.5"
   }
 }
