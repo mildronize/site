@@ -25,7 +25,7 @@
     "sass": "^1.29.0"
   },
   "scripts": {
-    "dev": "node server.js",
+    "dev": "cross-env NODE_ENV=development node server.js",
     "build": "next build",
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",

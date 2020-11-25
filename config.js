@@ -1,4 +1,10 @@
-const apiUrl = 'https://mildronize-data.netlify.app';
+let apiUrl;
+const nodeEnv = process.env.NODE_ENV;
+if(nodeEnv === "development"){
+    apiUrl = 'http://localhost:4000';
+}else {
+    apiUrl = 'https://mildronize-data.netlify.app';
+}
 
 const WPAPI = {    
     // allPosts: 'https://host.mildronize.com/wp-json/wp/v2/posts',     
@@ -14,6 +20,7 @@ const WPAPI = {
 const Config = {
     WPAPI,
     apiUrl,
+    nodeEnv,
     per_page: 100,
     timezone: 'Asia/Bangkok'
 }
