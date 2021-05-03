@@ -17,7 +17,7 @@ class PageLayout extends Component {
     }
     logPageView();
 
-    hotjar.initialize(1614923, 6);
+    hotjar.initialize("GA_CODE", 6);
   }
   render() {
     const { children } = this.props;
